@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            #email {
+                font-family: Roboto;
+                font-size: larger;
+                background-color: bisque;
+                color:black;
+            }
+
+            h3{
+                color: red;
+            }
+
+            .colorredclass{
+                color:aqua;
+            }
+        
+        </style>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h3>Formulario de contactenos</h3>
+        <form action="/sendemail" method="post">
+            <label for="email" class="colorredclass">Email</label>
+            <br>
+            <input id="email" name="email" type="text" />
+            <br>
+            <label for="subject">Subject</label>
+            <br>
+            <input id="subject" name="suject" type="text" />
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" name="message" rows="9" cols="9"></textarea>
+            <br>
+            <button id="okButton" >Enviar</button>
+        </form>
+    </body>
+</html>
